@@ -26,9 +26,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Create the Text using cv2.putText
-img1 = np.zeros((100,270), dtype = 'uint8')
+img1 = np.zeros((100,500), dtype = 'uint8')
 font = cv2.FONT_HERSHEY_SIMPLEX
-cv2.putText(img1,'Aishree',(5,70), font, 2,(255),5,cv2.LINE_AA)
+cv2.putText(img1,'Jayashree Rao',(5,70), font, 2,(255),5,cv2.LINE_AA)
 plt.imshow(img1,'gray')
 
 # Create the structuring element
@@ -45,11 +45,18 @@ plt.imshow(image_dilate1, 'gray')
 ```
 ## Output:
 ### Display the input Image
-![image](https://user-images.githubusercontent.com/70213227/171025645-d3c06a78-fe13-461e-91b8-e88176d53f85.png)
+
+![image](https://user-images.githubusercontent.com/74660507/172183066-c7903036-896a-411a-81c2-a3ea03be541b.png)
+
 ### Display the Eroded Image
-![image](https://user-images.githubusercontent.com/70213227/171025695-f7e1f881-5e61-4bfc-9cca-4c65e2aa5b9f.png)
+
+![image](https://user-images.githubusercontent.com/74660507/172183180-79e4aa5d-d57e-4c10-81f2-01d8636502b9.png)
+
+
 ### Display the Dilated Image
-![image](https://user-images.githubusercontent.com/70213227/171025732-d5975a9c-df9f-4923-962f-e582023bb084.png)
+
+![image](https://user-images.githubusercontent.com/74660507/172183238-c967cebe-fbe3-47a7-aeb5-ed2153157e66.png)
+
 
 ## Result
 Thus the generated text image is eroded and dilated using python and OpenCV.
